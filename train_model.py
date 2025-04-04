@@ -20,5 +20,5 @@ model = RandomForestClassifier(random_state=42)
 model.fit(X, y)
 
 # Save the model and feature names together in a tuple
-joblib.dump((model, feature_names), "rf_model.pkl")
+joblib.dump((model, feature_names), "models/rf_model.pkl")
 print("Model trained and saved!")

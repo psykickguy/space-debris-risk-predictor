@@ -8,8 +8,8 @@ import joblib
 st.set_page_config(page_title="Space Debris ML App", layout="wide")
 
 # Load the model
-with open("rf_model.pkl", "rb") as file:
-    model = joblib.load(file)
+with open("models/rf_model.pkl", "rb") as file:
+    model, feature_names = joblib.load(file)
 
 # Load the dataset
 @st.cache_data
